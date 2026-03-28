@@ -1,5 +1,5 @@
 {
-  "name": "legalOps",
+  "name": "legalops",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,14 +10,14 @@
     "typecheck": "turbo typecheck"
   },
   "devDependencies": {
-    "@workspace/eslint-config": "*",
-    "@workspace/typescript-config": "*",
+    "@workspace/eslint-config": "workspace:*",
+    "@workspace/typescript-config": "workspace:*",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "turbo": "^2.8.17",
     "typescript": "5.9.3"
   },
-  "packageManager": "npm@11.4.2",
+  "packageManager": "pnpm@10.7.0",
   "engines": {
     "node": ">=20"
   },
