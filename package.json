@@ -11,7 +11,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*.+(ts|tsx|json)": "prettier --write --ignore-unknown"
+    "apps/**/*.+(ts|tsx|json)": "prettier --write --ignore-unknown"
   },
   "devDependencies": {
     "@workspace/eslint-config": "workspace:*",
