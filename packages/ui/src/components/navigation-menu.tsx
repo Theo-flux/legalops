@@ -132,7 +132,7 @@ function NavigationMenuLink({
     <NavigationMenuPrimitive.Link
       data-slot="navigation-menu-link"
       className={cn(
-        "group relative inline-flex text-neutral-500 h-9 w-max items-center justify-center px-0.5 py-2 text-sm font-medium",
+        "group relative inline-flex h-9 w-max items-center justify-center px-0.5 py-2 text-sm font-medium text-neutral-500",
         "hover:text-primary",
         "focus:text-primary focus:outline-hidden",
         "disabled:pointer-events-none disabled:opacity-50",

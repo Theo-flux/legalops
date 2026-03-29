@@ -6,6 +6,5 @@
       "@workspace/ui/*": ["./src/*"]
     }
   },
-  "include": [".", "../../apps/web/layout/components/Logo.tsx"],
   "exclude": ["node_modules", "dist"]
 }
