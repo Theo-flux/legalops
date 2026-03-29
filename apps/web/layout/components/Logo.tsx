@@ -1,13 +1,13 @@
 import Image from "next/image"
-import GivrrsIcon from "@/app/assets/logo-icon.svg"
+import GivrrsIcon from "@/app/assets/legalops-icon.svg"
 import Link from "next/link"
 
 const Logo = () => {
   return (
     <Link href="/">
       <div className="flex items-center gap-2 text-lg font-semibold">
-        <figure className="relative h-8 w-8">
-          <Image src={GivrrsIcon} alt="givrrs logo" sizes="100" />
+        <figure className="relative h-6 w-8">
+          <Image src={GivrrsIcon} alt="legalOpss logo" sizes="100" />
         </figure>
         <p>LegalOps</p>
       </div>

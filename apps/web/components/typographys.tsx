@@ -9,7 +9,7 @@ export const SectionHeading = forwardRef<
     <h2
       ref={ref}
       {...rest}
-      className={`title mt-6 text-5xl leading-[1.2] font-semibold tracking-tighter md:text-6xl lg:text-7xl ${className}`}
+      className={`title text-4xl leading-[1.2] font-semibold tracking-tighter md:text-5xl lg:text-6xl ${className}`}
     >
       {children}
     </h2>

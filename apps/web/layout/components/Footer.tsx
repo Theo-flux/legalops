@@ -1,4 +1,4 @@
-// import { GlobeLockIcon, RssIcon } from 'lucide-react';
+import { IconGlobe, IconRss } from "@workspace/ui/icons"
 import Logo from "./Logo"
 
 const Footer = () => {
@@ -31,13 +31,13 @@ const Footer = () => {
             className="text-gray-400 transition-colors hover:text-primary"
             href="#"
           >
-            {/* <GlobeLockIcon /> */}
+            <IconGlobe />
           </a>
           <a
             className="text-gray-400 transition-colors hover:text-primary"
             href="#"
           >
-            {/* <RssIcon /> */}
+            <IconRss />
           </a>
         </div>
         <p className="text-sm font-normal text-gray-500 dark:text-gray-600">

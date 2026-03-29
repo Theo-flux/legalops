@@ -1,5 +1,6 @@
 "use client"
-// import Image from 'next/image';
+import Image from "next/image"
+import HeroImage from "@/app/assets/lawyer-hero-2.jpg"
 import { Badge } from "@workspace/ui/components/badge"
 import { SectionHeading, SubHeading } from "@/components/typographys"
 import { Button } from "@workspace/ui/components/button"
@@ -8,12 +9,7 @@ import Link from "next/link"
 import { IconArrowUpRight } from "@workspace/ui/icons"
 
 const Hero = () => {
-  const textOptions = [
-    "Stress free",
-    "Lawyer backed",
-    "Zero paperwork",
-    "Fully protected",
-  ]
+  const textOptions = ["For all", "Instant", "Global", "Transparent"]
 
   const [isLoaded, setIsLoaded] = useState(false)
 
@@ -26,7 +22,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <div id="home" className="w-dvw pt-40 pb-20">
+    <div id="home" className="w-dvw bg-muted pt-40 pb-20">
       <section className="mx-auto flex w-[95vw] max-w-5xl flex-col items-center justify-center gap-6 text-center md:h-4/5">
         <div className="w-full">
           <Badge
@@ -39,23 +35,15 @@ const Hero = () => {
             data-loaded={isLoaded}
             className="translate-y-6 opacity-0 transition-all delay-300 duration-700 ease-out data-[loaded=true]:translate-y-0 data-[loaded=true]:opacity-100"
           >
-            Legal operations, made simple
-            <div className="relative flex h-15 w-full overflow-hidden text-primary italic sm:h-24">
-              <ul className="flip4 w-full">
-                {textOptions.map((text) => (
-                  <li key={text} className="h-25 w-full">
-                    {text}.
-                  </li>
-                ))}
-              </ul>
-            </div>
+            Join our networks of
+            <p className="text-primary italic">Verified lawyers</p>
           </SectionHeading>
           <SubHeading
             data-loaded={isLoaded}
             className="translate-y-6 opacity-0 transition-all delay-500 duration-500 ease-out data-[loaded=true]:translate-y-0 data-[loaded=true]:opacity-100"
           >
-            we connect you with verified lawyers and let you track everything in
-            one place. Streamlined, transparent and built for modern founders.
+            Experience a professional, efficient way to scale your legal
+            practice with high-quality B2B tasks.
           </SubHeading>
         </div>
 
@@ -65,7 +53,7 @@ const Hero = () => {
         >
           <Link href="/">
             <Button size="cta" className="w-full md:w-auto">
-              Get started
+              Apply as a lawyer
               <IconArrowUpRight className="size-6" />
             </Button>
           </Link>
@@ -78,9 +66,9 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* <figure
+      <figure
         data-loaded={isLoaded}
-        className="mx-auto mt-12 h-1/5 w-[90vw] max-w-5xl translate-y-6 opacity-0 transition-all duration-1000 ease-out data-[loaded=true]:translate-y-0 data-[loaded=true]:opacity-100 md:mt-24"
+        className="mx-auto mt-12 h-1/5 w-[90vw] max-w-5xl translate-y-6 overflow-clip rounded-2xl opacity-0 transition-all duration-1000 ease-out data-[loaded=true]:translate-y-0 data-[loaded=true]:opacity-100 md:mt-24"
       >
         <Image
           src={HeroImage}
@@ -88,7 +76,7 @@ const Hero = () => {
           className="object-center"
           sizes="100vw"
         />
-      </figure> */}
+      </figure>
     </div>
   )
 }

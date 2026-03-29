@@ -1,4 +1,4 @@
-export const menuItems = [
+export const menuItems: Array<TMenuItem> = [
   {
     text: "Features",
     path: "#features",
@@ -11,11 +11,7 @@ export const menuItems = [
 
   {
     text: "For lawyers",
-    path: "#for-lawyers",
-  },
-  {
-    text: "About",
-    path: "#about",
+    path: "/lawyers",
   },
 
   {
